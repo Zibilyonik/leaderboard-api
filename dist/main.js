@@ -106,17 +106,7 @@ eval("\n\n/* istanbul ignore next  */\nfunction styleTagTransform(css, style) {\
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n/* harmony import */ var _markup_js__WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__(/*! ./markup.js */ \"./src/markup.js\");\n\n\n\ndocument.addEventListener('DOMContentLoaded', _markup_js__WEBPACK_IMPORTED_MODULE_1__.default);\n\n//# sourceURL=webpack://leaderboard-api/./src/index.js?");
-
-/***/ }),
-
-/***/ "./src/markup.js":
-/*!***********************!*\
-  !*** ./src/markup.js ***!
-  \***********************/
-/***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
-
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpack_require__.d(__webpack_exports__, {\n/* harmony export */   \"default\": () => (__WEBPACK_DEFAULT_EXPORT__)\n/* harmony export */ });\nconst markup = () => {\n  const main = document.getElementById('Container');\n  main.innerHTML = `<h1 class=\"h1 main-title col-12 text-center text-lg-left my-5 mx-auto\">LEADERBOARD</h1>\n  <div id=\"Scores\" class=\"col-12 col-lg-5 mx-lg-3 row\">\n    <div class=\"scorebtn col justify-content-center row align-items-start mx-auto\">\n      <h2 class=\"subtitle h2 col-12 col-lg-7 text-lg-left mx-auto\">Recent Scores</h2>\n      <button type=\"submit\" class=\"btn btn-primary col-5 mx-auto col-lg-4\">Refresh</button>\n    </div>\n    <div id=\"ScoreContainer\" class=\"col-12 my-3\">\n      <table class=\"table table-striped\">\n        <thead>\n          <tr>\n            <th scope=\"col\">Name</th>\n            <th scope=\"col\">Score</th>\n          </tr>\n        </thead>\n        <tbody>\n          <tr>\n            <th scope=\"row\">Mark</th>\n            <td>10</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">Jacob</th>\n            <td>22</td>\n          </tr>\n          <tr>\n            <th scope=\"row\">Larry</th>\n            <td>482</td>\n          </tr>\n        </tbody>\n      </table>\n    </div>\n  </div>\n  <div id=\"AddScore\" class=\"col-12 col-lg-5 mx-3 row justify-content-center align-self-start\">\n    <h2 class=\"subtitle h2 col-12 mx-auto\">Add your score</h2>\n    <input type=\"text\" name=\"Name\" id=\"NameText\" class=\"col-7 col-lg-4 mx-auto my-2\">\n    <div class=\"w-100\"></div>\n    <input type=\"text\" name=\"Score\" id=\"ScoreText\" class=\"col-7 col-lg-4 mx-auto my-2\">\n    <div class=\"w-100\"></div>\n    <button type=\"submit\" class=\"btn btn-primary col-4 mx-auto\">Submit</button>\n  </div>`;\n};\n\n/* harmony default export */ const __WEBPACK_DEFAULT_EXPORT__ = (markup);\n\n//# sourceURL=webpack://leaderboard-api/./src/markup.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _style_css__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./style.css */ \"./src/style.css\");\n\n\n//# sourceURL=webpack://leaderboard-api/./src/index.js?");
 
 /***/ })
 
