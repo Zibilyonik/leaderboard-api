@@ -1,9 +1,26 @@
 const GAMEID = 'GcPGWQybZ6pDpnEKvkOv';
-const scoreList = [];
-function getScores(gameId) {
-  fetch(`https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${gameId}/scores/`, {
+const LINK = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAMEID}/scores/`;
+const getScores = async () => {
+  const scoreList = await fetch(LINK, {
     method: 'GET',
-  })
-    .then((response) => response.json())
-    .then((json) => console.log(json));
-}
+  });
+  console.log(JSON.parse(scoreList.json));
+  return JSON.parse(scoreList.json);
+};
+
+const postScores = async (name, score) => {
+  const scoreList = await fetch(LINK, {
+    method: 'POST',
+    body: JSON.stringify({
+      name,
+      score,
+    }),
+    headers: {
+      'Content-type': 'application/json; charset=UTF-8',
+    },
+  });
+  console.log(JSON.parse(scoreList.json));
+  return JSON.parse(scoreList.json);
+};
+
+export default { getScores, postScores };
