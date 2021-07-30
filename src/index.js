@@ -5,7 +5,8 @@ document.addEventListener('DOMContentLoaded', () => {
   getScores();
 });
 document.getElementById('SubmitButton').addEventListener('click', () => {
-  const name = document.getElementById('NameText').value;
+  const user = document.getElementById('UserText').value;
   const score = document.getElementById('ScoreText').value;
-  postScore(name, score);
+  postScore(user, score);
 });
+document.getElementById('RefreshButton').addEventListener('click', getScores);

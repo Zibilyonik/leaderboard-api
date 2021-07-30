@@ -1,14 +1,16 @@
+import axios from 'axios';
 import { refreshList, addScore } from './dom.js';
 
 const GAMEID = 'GcPGWQybZ6pDpnEKvkOv';
-const LINK = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAMEID}/scores/`;
+const LINK = `https://us-central1-js-capstone-backend.cloudfunctions.net/api/games/${GAMEID}/scores`;
 const getScores = async () => {
-  const response = await fetch(LINK);
-  return response.json();
+  await axios.get(LINK).then((response) => {
+    refreshList(response.data.result);
+  });
 };
 
 const postScore = async (user, score) => {
-  const scoreList = await fetch(LINK, {
+  await fetch(LINK, {
     method: 'POST',
     body: JSON.stringify({
       user,
@@ -18,7 +20,6 @@ const postScore = async (user, score) => {
       'Content-type': 'application/json; charset=UTF-8',
     },
   });
-  console.log(scoreList.status);
   addScore(user, score);
 };
 
