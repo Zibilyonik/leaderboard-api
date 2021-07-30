@@ -42,6 +42,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "gh-pages": "^3.2.3",
     "lodash": "^4.17.21"
   }
