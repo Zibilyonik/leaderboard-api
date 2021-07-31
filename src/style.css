@@ -1,4 +1,32 @@
+body {
+  background-color: rgb(208, 222, 235);
+}
 
 #Container {
   margin: 5vh 5vw 0 5vw;
+}
+
+.btn-style {
+  color: black;
+  border: none;
+  background-color: aliceblue;
+  box-shadow: 2px 5px 5px rgb(110, 110, 110);
+}
+
+.btn-style:hover {
+  background-color: rgb(252, 0, 97);
+  color: aliceblue;
+}
+
+.input-style {
+  background-color: rgb(249, 255, 245);
+  border-radius: 5px;
+}
+
+#ScoreContainer {
+  background-color: rgb(229, 241, 241);
+}
+
+thead {
+  border-bottom: 2.5px solid rgb(15, 15, 15);
 }

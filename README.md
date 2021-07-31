@@ -14,11 +14,11 @@ Users can:
 
 
 ## Screenshot of the page
-TBA
+![Screenshot Profile Page](./.github/assets/screenshot.png)
 
 
 ## Live Version
-TBA
+https://zibilyonik.github.io/leaderboard-api/
 
 ## Built With
 
