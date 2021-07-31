@@ -18,7 +18,7 @@ TBA
 
 
 ## Live Version
-TBA
+https://zibilyonik.github.io/leaderboard-api/
 
 ## Built With
 
