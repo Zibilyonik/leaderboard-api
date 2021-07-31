@@ -5,7 +5,7 @@ module.exports = {
   entry: './src/index.js',
   mode: 'development',
   devServer: {
-    contentBase: './dist',
+    contentBase: './docs',
   },
   plugins: [
     new HtmlWebpackPlugin({
@@ -14,7 +14,7 @@ module.exports = {
   ],
   output: {
     filename: 'main.js',
-    path: path.resolve(__dirname, 'dist'),
+    path: path.resolve(__dirname, 'docs'),
     clean: true,
   },
   module: {
