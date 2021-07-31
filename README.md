@@ -14,7 +14,7 @@ Users can:
 
 
 ## Screenshot of the page
-TBA
+![Screenshot Profile Page](./.github/assets/screenshot.png)
 
 
 ## Live Version
