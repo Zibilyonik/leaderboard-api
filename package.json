@@ -24,7 +24,6 @@
   "homepage": "https://github.com/Zibilyonik/leaderboard-api#readme",
   "devDependencies": {
     "@babel/plugin-transform-modules-commonjs": "^7.14.5",
-    "axios": "^0.21.1",
     "babel-eslint": "^10.1.0",
     "css-loader": "^5.2.6",
     "eslint": "^7.31.0",
@@ -44,6 +43,7 @@
     "webpack-dev-server": "^3.11.2"
   },
   "dependencies": {
+    "axios": "^0.21.1",
     "lodash": "^4.17.21"
   }
 }
